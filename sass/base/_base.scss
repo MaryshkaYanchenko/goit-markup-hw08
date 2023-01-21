@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--color-text-primary);
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: var(--color-background);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+ul {
+    list-style: none;
+}
+
+header{
+    border-bottom: 1px solid #ececec;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: $bp-desktop) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+

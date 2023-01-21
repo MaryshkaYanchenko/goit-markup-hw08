@@ -1,0 +1,58 @@
+/*clients*/
+
+.clients {
+    // display: block;
+    width: 100%;
+    // flex-basis: calc((100% - 2*30px)/2);
+
+    @media screen and (min-width: $bp-desktop){
+        display: flex;
+        gap: 30px;
+    }
+    
+
+    &__item{
+      width: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
+
+      @media  screen and (min-width: $bp-tablet) {
+        width: calc((100% - 6 * 15px) / 3);
+        margin: 15px;
+      }
+
+      @media screen and (min-width: $bp-desktop) {
+        width: calc(100%/6 - 30px/6*5); /*формула з десктопної версії*/
+        height: 92px;
+      }
+        
+    }
+
+    &__icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        /* margin-bottom: 94px; */
+    
+        border: 1px solid #afb1b8;
+        border-radius: 4px;
+        outline: none;
+        fill: currentColor;
+    
+        /* outline: 1px solid red; */
+        color: var(--color-icon);
+        transition: border var(--timing-function),
+        color var(--timing-function);
+
+        &:hover,
+        &:focus{
+            border: 1px solid var(--color-brand);
+            color: var(--color-brand);
+        }
+    }
+
+
+}
+
+
