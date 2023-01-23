@@ -39,13 +39,8 @@
                 <a href="#" class="header__link">Контакти</a>
               </li>
             </ul>
-            <button class="header__burger js-open-menu is-open" type="button">
-              <svg width="40" height="40">
-                <use href="./images/icons.svg#icon-burger"></use>
-              </svg>
-            </button>
           </nav>
-
+         
           <ul class="contacts-header">
             <li>
               <a href="#" class="contacts-header__link">
@@ -64,7 +59,11 @@
               >
             </li>
           </ul>
-        
+          <button class="header__burger js-open-menu is-open" type="button">
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -145,22 +144,40 @@
           <ul class="activity__list">
             <li class="activity__img">
               <div class="activity__overlay">
-                <img src="./images/img1.jpg" alt="планшет клавіатура руки" />
+                <picture>
+                  <source srcset="
+                    ./images/img1-desktop.jpg 1x, 
+                    ./images/img1-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)" />
+                  <img src="./images/img1.jpg" alt="планшет клавіатура руки" />
+                </picture>
+                
                 <p class="activity__desc">десктопні додатки</p>
               </div>
             </li>
             <li class="activity__img">
               <div class="activity__overlay">
-                <img src="./images/img2.jpg" alt="телефон ноутбук" />
+                <picture>
+                  <source srcset="
+                    ./images/img2-desktop.jpg 1x, 
+                    ./images/img2-desktop@2x.jpg 2x" 
+                    media="(min-width: 1200px)" />
+                    <img src="./images/img2.jpg" alt="телефон ноутбук" />
+                  </picture>
+                
                 <p class="activity__desc">мобільні додатки</p>
               </div>
             </li>
             <li class="activity__img">
               <div class="activity__overlay">
-                <img
-                  src="./images/img3.jpg"
-                  alt="планшет комп'ютор кольорова схема"
-                />
+                <picture>
+                  <source srcset="
+                  ./images/img3-desktop.jpg 1x, 
+                  ./images/img3-desktop@2x.jpg 2x" 
+                  media="(min-width: 1200px)" />
+                  <img src="./images/img3.jpg" alt="планшет комп'ютор кольорова схема" />
+                </picture>
+               
                 <p class="activity__desc">дизайнерські рішення</p>
               </div>
             </li>
@@ -173,10 +190,21 @@
           <h2 class="caption">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                src="./images/img2_1.jpg"
-                alt="усміхнений хлопець в окулярах з бородою"
-              />
+              <picture>
+                  <source srcset="
+                    ./images/img2_1-desktop.jpg 1x, 
+                    ./images/img2_1-desktop@2x.jpg 2x" 
+                    media="(min-width: 1200px)" />
+                  <source srcset="
+                    ./images/img2_1-tablet.jpg 1x, 
+                    ./images/img2_1-tablet@2x.jpg 2x" 
+                    media="(min-width: 768px)" />
+                <img srcset="
+                ./images/img2_1-mobile.jpg 1x,
+                ./images/img2_1-mobile@2x.jpg 2x"
+                src="./images/img2_1.jpg" alt="усміхнений хлопець в окулярах з бородою" />
+              </picture>
+             
               <div class="member">
                 <h3 class="member__title">Ігор Дем'яненко</h3>
                 <p class="member__desc">Product Designer</p>
@@ -216,10 +244,22 @@
             </li>
 
             <li class="team__item">
-              <img
-                src="./images/img2_2.jpg"
-                alt="усміхнена дівчина в окулярах"
-              />
+              <picture>
+                <source srcset="
+                  ./images/img2_2-desktop.jpg 1x, 
+                  ./images/img2_2-desktop@2x.jpg 2x" 
+                  media="(min-width: 1200px)" />
+                <source srcset="
+                  ./images/img2_2-tablet.jpg 1x, 
+                  ./images/img2_2-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                
+                <img srcset="
+                  ./images/img2_2-mobile.jpg 1x,
+                  ./images/img2_2-mobile@2x.jpg 2x"
+                  src="./images/img2_2.jpg"
+                  alt="усміхнена дівчина в окулярах" />
+              </picture>
+              
               <div class="member">
                 <h3 class="member__title">Ольга Рєпіна</h3>
                 <p class="member__desc">Frontend Developer</p>
@@ -259,7 +299,19 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/img2_3.jpg" alt="усміхнений хлопець" />
+              <picture>
+                <source srcset="
+                                  ./images/img2_3-desktop.jpg 1x, 
+                                  ./images/img2_3-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="
+                                  ./images/img2_3-tablet.jpg 1x, 
+                                  ./images/img2_3-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                
+                <img srcset="
+                                  ./images/img2_3-mobile.jpg 1x,
+                                  ./images/img2_3-mobile@2x.jpg 2x"
+                                  src="./images/img2_3.jpg" alt="усміхнений хлопець" />
+              </picture>
 
               <div class="member">
                 <h3 class="member__title">Микола Тарасов</h3>
@@ -300,10 +352,21 @@
             </li>
 
             <li class="team__item">
-              <img
-                src="./images/img2_4.jpg"
-                alt="не дуже усміхнений хлопець в окулярах"
-              />
+              <picture>
+                <source srcset="
+                  ./images/img2_4-desktop.jpg 1x, 
+                  ./images/img2_4-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="
+                  ./images/img2_4-tablet.jpg 1x, 
+                  ./images/img2_4-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                
+                <img srcset="
+                  ./images/img2_4-mobile.jpg 1x,
+                  ./images/img2_4-mobile@2x.jpg 2x"
+                  src="./images/img2_4.jpg"
+                  alt="не дуже усміхнений хлопець в окулярах" />
+              </picture>
+              
               <div class="member">
                 <h3 class="member__title">Михайло Єрмаков</h3>
                 <p class="member__desc">UI Designer</p>
@@ -488,7 +551,7 @@
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
      </button>
-     <ul class="">
+     <ul class="mobile-menu__list">
       <li>
         <a href="./index.html" class="mobile-menu__link"
           >Студія</a
@@ -504,15 +567,30 @@
     <ul class="contacts-mobile">
       <li>
         <a href="#" class="contacts-mobile__link">
-          info@devstudio.com</a
-        >
-      </li>
-      <li>
-        <a href="#" class="contacts-mobile__link"></a>
           +380961111111</a
         >
       </li>
+      <li>
+        <a href="#" class="contacts-mobile__link">
+          info@devstudio.com</a
+        >
+      </li>
+     
     </ul>
+    <ul class="socials-mobile">
+      <li class="socials-mobile__item">
+        <a href="#" class="socials-mobile__link">Instagram</a>
+      </li>
+      <li class="socials-mobile__item">
+        <a href="#" class="socials-mobile__link">Twitter</a>
+      </li>
+      <li class="socials-mobile__item">
+        <a href="#" class="socials-mobile__link">Facebook</a>
+      </li>
+      <li class="socials-mobile__item">
+        <a href="#" class="socials-mobile__link">LinkedIn</a>
+      </li>
+  </ul>
 
      </div>
     </div> 
@@ -588,7 +666,8 @@
               <svg class="checkbox__icon" widht="16" height="15">
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
-              Погоджуюся з розсилкою та приймаю
+              
+              <span class="checkbox__text">Погоджуюся з розсилкою та приймаю></span>
               <a href="#" class="modal__link">Умови договору</a>
               </label
             >
@@ -600,6 +679,13 @@
         </div>
       </div>
     </div>
+
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+    ></script>
 
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>

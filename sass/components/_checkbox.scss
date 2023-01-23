@@ -26,7 +26,18 @@
     
         margin: 0 7px 0 0;
     }
+
+    &__text{
+        font-size: 12px;
+        font-weight: 400;
+
+        @media screen and ($bp-desktop){
+            font-size: 14px;
+        }
+    }
 }
+
+
 /* .checkbox-label{
     display: flex;
     justify-content: center;

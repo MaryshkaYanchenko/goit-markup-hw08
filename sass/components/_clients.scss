@@ -1,23 +1,17 @@
 /*clients*/
 
 .clients {
-    // display: block;
-    width: 100%;
-    // flex-basis: calc((100% - 2*30px)/2);
-
-    @media screen and (min-width: $bp-desktop){
-        display: flex;
-        gap: 30px;
-    }
-    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 
     &__item{
-      width: calc((100% - 2 * 30px) / 2);
-      margin: 15px;
+      width: calc((100% - 1 * 30px) / 2);
+      
 
       @media  screen and (min-width: $bp-tablet) {
         width: calc((100% - 6 * 15px) / 3);
-        margin: 15px;
+        // margin: 15px;
       }
 
       @media screen and (min-width: $bp-desktop) {
@@ -39,6 +33,9 @@
         border-radius: 4px;
         outline: none;
         fill: currentColor;
+
+        padding-top: 16px;
+        padding-bottom: 16px;
     
         /* outline: 1px solid red; */
         color: var(--color-icon);

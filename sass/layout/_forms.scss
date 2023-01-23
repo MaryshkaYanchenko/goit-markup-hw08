@@ -1,6 +1,10 @@
 .form {
-    display: flex;
-    align-items: center;
+    
+    
+    @media screen and (min-width: $bp-desktop) {
+        display: flex;
+        align-items: center;
+    }
 
     &__icon{
         width: 24px;
@@ -11,8 +15,7 @@
 
     &__input {
         width: 100%;
-        // width: 358px;
-        // height: 50px;
+        height: 50px;
         padding: 15px 16px;
     
         letter-spacing: 0.03em;
@@ -25,6 +28,14 @@
         color: rgba(255, 255, 255, 0.6);
     
         outline: none;
+
+        @media screen and (min-width: $bp-tablet) {
+            width: 450px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            width: 358px;
+        }
 
         &::placeholder {
             font-size: 16px;
@@ -39,19 +50,29 @@
 
 /*footer-form*/
 .feedback {
-    margin-left: 93px;
+   
+    @media screen and (min-width: $bp-tablet) {
+        // margin-left: 93px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+        margin-left: 93px;
+    }
     
     &__title {
         color: var(--color-background);
         font-size: 14px;
         font-weight: 700;
         line-height: 1.1;
-        text-align: left;
+        text-align: center;
     
-        /* margin-left: 93px; */
         margin-bottom: 20px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+
+        @media screen and (min-width: $bp-desktop) {
+            text-align: left;
+        }
     }
 }
 

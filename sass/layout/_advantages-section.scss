@@ -3,12 +3,22 @@
 
     @media (min-width: $bp-tablet){
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 30px;
     }
 
     &__list {
         padding: 15px;
         // flex-basis: calc(100% / 3 - var(--projects-set-gap));
+
+        @media (min-width: $bp-tablet) {
+            width: calc((100% - 6 * 15px) / 2);
+        }
+
+        @media (min-width: $bp-desktop) {
+            width: calc(100%/4 - 30px/4*3);
+        }
     }
     
     &__img {
