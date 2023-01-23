@@ -42,9 +42,20 @@
         margin-right: 10px;
         transition: color var(--color-icon) var(--timing-function);
 
-        @media (min-width: $bp-tablet) {
-            width: 14px;
-            height: 10px;
+        &--vertical{
+
+            @media (min-width: $bp-tablet) {
+                width: 10px;
+                height: 14px;
+            }
+        }
+
+        &--horizontal {
+
+            @media (min-width: $bp-tablet) {
+                width: 14px;
+                height: 10px;
+            }
         }
 
         @media (min-width: $bp-desktop) {

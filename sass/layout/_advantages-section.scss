@@ -9,15 +9,26 @@
     }
 
     &__list {
-        padding: 15px;
-        // flex-basis: calc(100% / 3 - var(--projects-set-gap));
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
 
         @media (min-width: $bp-tablet) {
+            &:not(:last-child) {
+                margin-bottom: 0px;
+            }
+            
             width: calc((100% - 6 * 15px) / 2);
+            max-width: 354px;
         }
 
         @media (min-width: $bp-desktop) {
             width: calc(100%/4 - 30px/4*3);
+        
         }
     }
     
